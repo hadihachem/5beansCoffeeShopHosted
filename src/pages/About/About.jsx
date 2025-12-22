@@ -1,16 +1,13 @@
 import React from 'react';
 import './About.css';
-import cafeExterior from '../../assets/food_del/frontend_assets/AboutHeaderImg.avif';
-import barista from '../../assets/food_del/frontend_assets/Image2About.avif';
-import coffeeBeans from '../../assets/food_del/frontend_assets/BaristaAbout.avif';
-import latteArt from '../../assets/food_del/frontend_assets/AboutIcedCoffee.avif';
+import { imageLinks } from '../../assets/S3Bucket/5beansAssets';
 
 const About = () => {
     return (
         <div className="about-page">
             {/* Hero Section */}
             <div className="about-hero">
-                <img src={cafeExterior} alt="5 Beans Coffee Shop exterior" className="hero-image" />
+                <img src={imageLinks.aboutHeaderImg} alt="5 Beans Coffee Shop exterior" className="hero-image" />
                 <div className="hero-overlay">
                     <h1>Our Story</h1>
                     <p>From bean to brew - a journey of passion and perfection</p>
@@ -33,13 +30,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image">
-                        <img src={barista} alt="Our barista crafting coffee" className="styled-image" />
+                        <img src={imageLinks.image2About} alt="Our barista crafting coffee" className="styled-image" />
                     </div>
                 </div>
 
                 <div className="about-section reverse">
                     <div className="about-image">
-                        <img src={coffeeBeans} alt="Premium coffee beans selection" className="styled-image" />
+                        <img src={imageLinks.baristaAbout} alt="Premium coffee beans selection" className="styled-image" />
                     </div>
                     <div className="about-text">
                         <h2>Our Philosophy</h2>
@@ -69,7 +66,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-image">
-                        <img src={latteArt} alt="Exquisite latte art" className="styled-image" />
+                        <img src={imageLinks.AboutIcedCoffee} alt="Exquisite latte art" className="styled-image" />
                     </div>
                 </div>
             </div>

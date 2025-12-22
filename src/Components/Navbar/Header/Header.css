@@ -3,7 +3,7 @@
     height: 100vh;
     min-height: 600px;
     margin-bottom: 30px;
-    background-image: url('../../../assets/food_del/frontend_assets/background5b.jpg');
+    background-image: url('https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/background5b.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

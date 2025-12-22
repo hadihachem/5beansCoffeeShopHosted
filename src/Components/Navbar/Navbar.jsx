@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import "./Navbar.css";
-import logo from "../../assets/food_del/frontend_assets/logo.jpg";
+import {imageLinks} from "../../assets/S3Bucket/5beansAssets";
 // import shopping_cart from "../../assets/shopping-cart.png";
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
@@ -25,7 +25,7 @@ const Navbar = ({ setShowLogin }) => {
     return (
         <nav className='navbar'>
             <div className="navbar-container">
-                <Link to="/"><img src={logo} alt="Coffee Shop Logo" className="logo" /></Link>
+                <Link to="/"><img src={imageLinks.logo} alt="Coffee Shop Logo" className="logo" /></Link>
                 
                 {/* Hamburger Menu Button (Mobile Only) */}
                 <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>

@@ -1,18 +1,17 @@
 // import InstagramIcon from '@mui/icons-material/Instagram';
 import "./Footer.css"
 import {Link} from "react-router-dom"
-import logo from "../../assets/food_del/frontend_assets/logoHorizontal.jpg";
-import footerFlatWhite from "../../assets/food_del/frontend_assets/footerFlatWhite.png"
+import { imageLinks } from "../../assets/S3Bucket/5beansAssets";
 // import facebook_icon from "../../assets/food_del/frontend_assets/facebook_icon.png"
 // import linkedin_icon from "../../assets/food_del/frontend_assets/linkedin_icon.png"
 
 const Footer = () => {
   return (
     <div id="footer" className="footer">
-        <img src={footerFlatWhite} alt="Coffee art" className="footerFlatwhite" />
+        <img src={imageLinks.footerFlatWhite} alt="Coffee art" className="footerFlatwhite" />
         <div className="footer-content">
             <div className="footer-content-left">
-                <Link to="/"><img src={logo} alt="Coffee Shop Logo" className="logo" /></Link>
+                <Link to="/"><img src={imageLinks.logoHorizontal} alt="Coffee Shop Logo" className="logo" /></Link>
                 <p>Your premium coffee experience. We source the finest beans and craft each cup with passion and precision.</p>
                 <div className="footer-social-icons">
                     {/* <img src={facebook_icon} alt="" /> */}
@@ -34,7 +33,9 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>support@jmjsgroup.com</li>
+                    <li>
+                    <a href="mailto:support@jmjsgroup.com">support@jmjsgroup.com</a>
+                    </li>
                 </ul>
             </div>
         </div>

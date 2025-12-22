@@ -1,45 +1,31 @@
 import React from 'react'
-import coffeeBag from "../../assets/food_del/frontend_assets/coffee-bag.jpeg";
 
-// import fullwidth_coffeebag from "../../assets/food_del/frontend_assets/fullwidth-coffee-bag.JPG";
-import flatwhite from "../../assets/food_del/frontend_assets/FlatWhite.png";
-import cookie from "../../assets/food_del/frontend_assets/doubleChocolateCookie.jpeg";
-import coconutBalls from "../../assets/food_del/frontend_assets/coconutBalls.jpeg";
-import pancake from "../../assets/food_del/frontend_assets/pancake.jpeg";
-import fondant from "../../assets/food_del/frontend_assets/fondant.jpeg";
-// import granola from "../../assets/food_del/frontend_assets/GranolaBreakfast.jpg";
-import lebaneseCoffee from "../../assets/food_del/frontend_assets/lebaneseCoffee.jpeg";
-import peanutButterJar from "../../assets/food_del/frontend_assets/peanutbutterJar.jpeg";
-import peanutButterJarSmall from "../../assets/food_del/frontend_assets/peanutbutterJar.jpeg";
-import milkshakeStrawberry from "../../assets/food_del/frontend_assets/StrawberryMilkshake.png";
-import peanutButterBar from "../../assets/food_del/frontend_assets/PeanutButterBar.png";
-import datesBalls from "../../assets/food_del/frontend_assets/dateBalls.jpeg";
 import './HomeBody.css'
+import { imageLinks } from '../../assets/S3Bucket/5beansAssets';
 
 const HomeBody = () => {
-    const images = [
-      coffeeBag, 
-      // beansBag, 
-    //   fullwidth_coffeebag, 
-    flatwhite,
-    cookie , 
-    coconutBalls,
-    pancake ,
-    fondant, 
-    // granola, 
-    lebaneseCoffee, 
-    peanutButterJar,
-    peanutButterJarSmall, 
-    milkshakeStrawberry, 
-    datesBalls,
-     peanutButterBar,
-    ];
+const images = [
+  imageLinks.coffeeBag,
+  imageLinks.flatwhite,
+  imageLinks.cookie,
+  imageLinks.coconutBalls,
+  imageLinks.pancake,
+  imageLinks.fondant,
+  imageLinks.lebaneseCoffee,
+  imageLinks.peanutButterJar,
+  imageLinks.peanutButterJarSmall,
+  imageLinks.milkshakeStrawberry,
+  imageLinks.datesBalls,
+  imageLinks.peanutButterBar,
+];
+
   
     return (
       <div className="album-container">
+        <img src='https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/assets/images/Scratched-icon.png'></img>
         <div className="masonry">
         {images.map((img, index) => (
-          <img src={img} alt={`Photo ${index + 1}`} key={index} className="masonry-img" />
+          <img  rel="preload" src={img} alt={`Photo ${index + 1}`} key={index} className="masonry-img" />
         ))}
       </div>
       </div>
