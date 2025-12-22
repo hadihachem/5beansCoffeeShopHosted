@@ -26,16 +26,15 @@ const Footer = () => {
                 <h2>COMPANY</h2>
                 <ul>
                     <a href="/"><li>Home</li></a>
-                    <a href="/menu"><li>Menu</li></a>
                     <a href="/about"><li>About Us</li></a>
-                    <a href="/Feedback"><li>Feedback</li></a>
+                    <a href="/location"><li>Locations</li></a>
                 </ul>
             </div>
 
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>5beanscoffeeshop@gmail.com</li>
+                    <li>support@jmjsgroup.com</li>
                 </ul>
             </div>
         </div>

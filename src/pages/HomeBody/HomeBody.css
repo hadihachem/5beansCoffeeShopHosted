@@ -1,8 +1,9 @@
 .album-container {
     padding: 8px;
-    background-color: #f7f7f7;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        background-color: #f7f0e4;;
+
   }
   .custom-image{
     border: 1px solid black;
