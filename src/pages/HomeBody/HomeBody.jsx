@@ -6,17 +6,13 @@ import { imageLinks } from '../../assets/S3Bucket/5beansAssets';
 const HomeBody = () => {
 const images = [
   imageLinks.coffeeBag,
-  imageLinks.flatwhite,
-  imageLinks.cookie,
-  imageLinks.coconutBalls,
+    imageLinks.milkshakeStrawberry,
+
   imageLinks.pancake,
-  imageLinks.fondant,
   imageLinks.lebaneseCoffee,
-  imageLinks.peanutButterJar,
-  imageLinks.peanutButterJarSmall,
-  imageLinks.milkshakeStrawberry,
+    imageLinks.flatwhite,
+
   imageLinks.datesBalls,
-  imageLinks.peanutButterBar,
 ];
 
   

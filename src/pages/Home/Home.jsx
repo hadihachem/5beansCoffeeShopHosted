@@ -1,9 +1,7 @@
 import "./Home.css";
 import Header from '../../Components/Navbar/Header/Header';
-import ExploreMenu from "../../Components/ExploreMenu/ExploreMenu";
 import { useState } from "react";
-import FoodDisplay from "../../Components/FoodDisplay/FoodDisplay";
-import AppDownload from "../../Components/AppDownload/AppDownload";
+
 import HomeBody from "../HomeBody/HomeBody";
 
 const Home = () => {
@@ -14,7 +12,6 @@ const Home = () => {
       <Header />
       <main className="home-main-content">
         <HomeBody />
-        {/* <AppDownload /> */}
       </main>
     </div>
   )

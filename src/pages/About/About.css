@@ -1,14 +1,18 @@
-/* About.css */
+/* Modern About Page Design */
 .about-page {
-  font-family: 'Cormorant Garamond', serif;
-  color: #3a2d1f;
-  line-height: 1.7;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1a1a;
+  overflow-x: hidden;
 }
 
-/* Hero Section */
+/* Hero Section - Modern */
 .about-hero {
   position: relative;
-  height: 80vh;
+  height: 85vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -16,7 +20,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.7);
+  filter: brightness(0.85);
+  transition: transform 10s ease;
+}
+
+.about-hero:hover .hero-image {
+  transform: scale(1.05);
 }
 
 .hero-overlay {
@@ -25,183 +34,392 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #f8f4ee;
-  width: 80%;
+  color: white;
+  width: 90%;
+  max-width: 1200px;
+  z-index: 2;
 }
 
 .hero-overlay h1 {
-  font-size: 4rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeUp 1s ease-out;
 }
 
 .hero-overlay p {
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.4rem;
   font-weight: 300;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeUp 1s ease-out 0.2s both;
 }
 
-/* Main Content */
+/* Gradient overlay */
+.about-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 1;
+}
+
+/* Main Content - Modern Grid */
 .about-content {
-  max-width: 1200px;
-  margin: 5rem auto;
+  max-width: 1400px;
+  margin: 8rem auto;
   padding: 0 2rem;
 }
 
 .about-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
   align-items: center;
-  margin: 6rem 0;
-  gap: 4rem;
+  margin: 8rem 0;
+  position: relative;
 }
 
-.reverse {
-  flex-direction: row-reverse;
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4a762, transparent);
+}
+
+/* Alternate layout for reverse sections */
+.reverse .about-text {
+  order: 2;
+}
+
+.reverse .about-image {
+  order: 1;
 }
 
 .about-text {
-  flex: 1;
   padding: 2rem;
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: #5A382D;
-  margin-bottom: 1.5rem;
-  position: relative;
-}
-
-.about-text h2::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 60px;
-  height: 2px;
-  background-color: #d4a762;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
 }
 
 .lead-text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  color: #6b5a45;
-  margin-bottom: 1.5rem;
+  color: #d4a762;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.lead-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #d4a762;
+  border-radius: 50%;
 }
 
 .about-text p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  font-weight: 300;
 }
 
+/* Modern Image Styling */
 .about-image {
-  flex: 1;
   position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  max-height: 600px;
 }
 
 .styled-image {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Signature Section */
+.about-image:hover .styled-image {
+  transform: scale(1.08);
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid #d4a762;
+  border-radius: 16px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Signature Section - Modern Cards */
 .signature-section {
-  background-color: #f8f4ee;
-  padding: 6rem 0;
-  text-align: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f5 100%);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.signature-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d4a762, transparent);
 }
 
 .signature-content {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .signature-content h2 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: #5A382D;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c2c2c;
   margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.5px;
 }
 
-.signature-content p {
+.signature-content > p {
   max-width: 800px;
-  margin: 0 auto 3rem;
-  font-size: 1.1rem;
+  margin: 0 auto 5rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+  text-align: center;
+  font-weight: 300;
 }
 
+/* Modern Cards Grid */
 .signature-items {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   margin-top: 3rem;
-  flex-wrap: wrap;
 }
 
 .signature-item {
-  flex: 1;
-  min-width: 250px;
-  padding: 2rem;
   background: white;
-  border-radius: 5px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.signature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #d4a762, #c19a5b);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
 }
 
 .signature-item:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.signature-item:hover::before {
+  transform: scaleX(1);
 }
 
 .signature-item h3 {
-  font-size: 1.5rem;
-  color: #5A382D;
+  font-size: 1.6rem;
+  color: #2c2c2c;
   margin-bottom: 1rem;
-  font-weight: 400;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.signature-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #d4a762;
+  transition: width 0.3s ease;
+}
+
+.signature-item:hover h3::after {
+  width: 80px;
+}
+
+.signature-item p {
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Number decoration */
+.signature-item:nth-child(1)::after {
+  content: '01';
+}
+.signature-item:nth-child(2)::after {
+  content: '02';
+}
+.signature-item:nth-child(3)::after {
+  content: '03';
+}
+
+.signature-item::after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgba(212, 167, 98, 0.1);
+  line-height: 1;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .about-section {
-      flex-direction: column;
-      gap: 2rem;
+    gap: 4rem;
   }
   
   .hero-overlay h1 {
-      font-size: 3rem;
-  }
-  
-  .hero-overlay p {
-      font-size: 1.2rem;
-  }
-  
-  .about-text, .about-image {
-      flex: none;
-      width: 100%;
-  }
-  
-  .styled-image {
-      height: 400px;
+    font-size: 3.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 6rem 0;
+  }
+  
+  .reverse .about-text,
+  .reverse .about-image {
+    order: initial;
+  }
+  
+  .about-image {
+    max-height: 500px;
+  }
+  
   .hero-overlay h1 {
-      font-size: 2.5rem;
+    font-size: 3rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    margin: 5rem auto;
+    padding: 0 1.5rem;
   }
   
   .about-text h2 {
-      font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .lead-text {
-      font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  
+  .signature-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .signature-items {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+  
+  .about-text {
+    padding: 1rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  
+  .lead-text {
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .signature-section {
+    padding: 5rem 0;
   }
   
   .signature-item {
-      min-width: 100%;
+    padding: 2rem 1.5rem;
   }
 }
