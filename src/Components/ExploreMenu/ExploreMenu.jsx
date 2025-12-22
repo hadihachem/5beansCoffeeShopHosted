@@ -1,6 +1,6 @@
 import "./ExploreMenu.css";
 import { useState, useEffect, useContext } from "react";
-import { menu_list } from "../../assets/food_del/frontend_assets/assets";
+// import { menu_list } from "../../assets/food_del/frontend_assets/assets";
 import { StoreContext } from "../../context/StoreContext";
 
 const ExploreMenu = ({ category, setCategory, setFilteredData }) => {

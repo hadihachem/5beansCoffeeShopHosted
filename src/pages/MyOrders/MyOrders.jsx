@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from 'react'
 import './MyOrders.css'
 import { StoreContext } from '../../context/StoreContext';
 import axios from 'axios';
-import { assets } from '../../assets/food_del/frontend_assets/assets';
-import orderbg from '../../assets/food_del/frontend_assets/ordersBg.jpeg'
+// import { assets } from '../../assets/food_del/frontend_assets/assets';
+// import orderbg from '../../assets/food_del/frontend_assets/ordersBg.jpeg'
 
 const MyOrders = () => {
 

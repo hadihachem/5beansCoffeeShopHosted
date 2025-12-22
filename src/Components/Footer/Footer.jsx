@@ -1,9 +1,10 @@
-import { assets } from "../../assets/food_del/frontend_assets/assets"
 // import InstagramIcon from '@mui/icons-material/Instagram';
 import "./Footer.css"
 import {Link} from "react-router-dom"
 import logo from "../../assets/food_del/frontend_assets/logoHorizontal.jpg";
 import footerFlatWhite from "../../assets/food_del/frontend_assets/footerFlatWhite.png"
+// import facebook_icon from "../../assets/food_del/frontend_assets/facebook_icon.png"
+// import linkedin_icon from "../../assets/food_del/frontend_assets/linkedin_icon.png"
 
 const Footer = () => {
   return (
@@ -14,9 +15,9 @@ const Footer = () => {
                 <Link to="/"><img src={logo} alt="Coffee Shop Logo" className="logo" /></Link>
                 <p>Your premium coffee experience. We source the finest beans and craft each cup with passion and precision.</p>
                 <div className="footer-social-icons">
-                    <img src={assets.facebook_icon} alt="" />
+                    {/* <img src={facebook_icon} alt="" /> */}
                     {/* <InstagramIcon  fontSize="large"/> */}
-                    <img src={assets.linkedin_icon} alt="" />
+                    {/* <img src={linkedin_icon} alt="" /> */}
 
                 </div>
             </div>
@@ -34,7 +35,6 @@ const Footer = () => {
             <div className="footer-content-right">
                 <h2>GET IN TOUCH</h2>
                 <ul>
-                    <li>+961 03-743-777</li>
                     <li>5beanscoffeeshop@gmail.com</li>
                 </ul>
             </div>

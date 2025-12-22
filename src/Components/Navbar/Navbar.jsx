@@ -1,10 +1,10 @@
 import { useContext, useState } from 'react';
 import "./Navbar.css";
 import logo from "../../assets/food_del/frontend_assets/logo.jpg";
-import shopping_cart from "../../assets/shopping-cart.png";
+// import shopping_cart from "../../assets/shopping-cart.png";
 import { Link, useNavigate } from 'react-router-dom';
 import { StoreContext } from '../../context/StoreContext';
-import { assets } from '../../assets/food_del/frontend_assets/assets';
+// import { assets } from '../../assets/food_del/frontend_assets/assets';
 
 const Navbar = ({ setShowLogin }) => {
     const [menu, setMenu] = useState("home");

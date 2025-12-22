@@ -1,6 +1,5 @@
 import React from 'react'
 import coffeeBag from "../../assets/food_del/frontend_assets/coffee-bag.jpeg";
-import beansBag from "../../assets/food_del/frontend_assets/beansbag.png";
 
 // import fullwidth_coffeebag from "../../assets/food_del/frontend_assets/fullwidth-coffee-bag.JPG";
 import flatwhite from "../../assets/food_del/frontend_assets/FlatWhite.png";

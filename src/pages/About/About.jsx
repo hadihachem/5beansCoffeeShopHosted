@@ -29,7 +29,7 @@ const About = () => {
                             What began as a shared dream in Australia's vibrant café culture has blossomed into a beloved institution in Lebanon. At 5 Beans, we've mastered the alchemy of transforming premium beans into moments of connection and joy.
                         </p>
                         <p>
-                            Our journey from a cozy neighborhood café to our new Dbayeh location reflects the warmth and loyalty of our community. Each expansion brings new faces to our family of skilled artisans, all committed to upholding our exacting standards.
+                            Our journey from a cozy neighborhood café to our new Dekweneh location reflects the warmth and loyalty of our community. Each expansion brings new faces to our family of skilled artisans, all committed to upholding our exacting standards.
                         </p>
                     </div>
                     <div className="about-image">
