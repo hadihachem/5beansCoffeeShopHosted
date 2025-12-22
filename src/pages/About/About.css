@@ -1,0 +1,207 @@
+/* About.css */
+.about-page {
+  font-family: 'Cormorant Garamond', serif;
+  color: #3a2d1f;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f8f4ee;
+  width: 80%;
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* Main Content */
+.about-content {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin: 6rem 0;
+  gap: 4rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-text {
+  flex: 1;
+  padding: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #5A382D;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.about-text h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #d4a762;
+}
+
+.lead-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #6b5a45;
+  margin-bottom: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.about-image {
+  flex: 1;
+  position: relative;
+}
+
+.styled-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Signature Section */
+.signature-section {
+  background-color: #f8f4ee;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.signature-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.signature-content h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #5A382D;
+  margin-bottom: 2rem;
+}
+
+.signature-content p {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+}
+
+.signature-items {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.signature-item {
+  flex: 1;
+  min-width: 250px;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.signature-item:hover {
+  transform: translateY(-10px);
+}
+
+.signature-item h3 {
+  font-size: 1.5rem;
+  color: #5A382D;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about-section {
+      flex-direction: column;
+      gap: 2rem;
+  }
+  
+  .hero-overlay h1 {
+      font-size: 3rem;
+  }
+  
+  .hero-overlay p {
+      font-size: 1.2rem;
+  }
+  
+  .about-text, .about-image {
+      flex: none;
+      width: 100%;
+  }
+  
+  .styled-image {
+      height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-overlay h1 {
+      font-size: 2.5rem;
+  }
+  
+  .about-text h2 {
+      font-size: 2rem;
+  }
+  
+  .lead-text {
+      font-size: 1.1rem;
+  }
+  
+  .signature-item {
+      min-width: 100%;
+  }
+}

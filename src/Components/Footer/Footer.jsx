@@ -1,0 +1,48 @@
+import { assets } from "../../assets/food_del/frontend_assets/assets"
+// import InstagramIcon from '@mui/icons-material/Instagram';
+import "./Footer.css"
+import {Link} from "react-router-dom"
+import logo from "../../assets/food_del/frontend_assets/logoHorizontal.jpg";
+import footerFlatWhite from "../../assets/food_del/frontend_assets/footerFlatWhite.png"
+
+const Footer = () => {
+  return (
+    <div id="footer" className="footer">
+        <img src={footerFlatWhite} alt="Coffee art" className="footerFlatwhite" />
+        <div className="footer-content">
+            <div className="footer-content-left">
+                <Link to="/"><img src={logo} alt="Coffee Shop Logo" className="logo" /></Link>
+                <p>Your premium coffee experience. We source the finest beans and craft each cup with passion and precision.</p>
+                <div className="footer-social-icons">
+                    <img src={assets.facebook_icon} alt="" />
+                    {/* <InstagramIcon  fontSize="large"/> */}
+                    <img src={assets.linkedin_icon} alt="" />
+
+                </div>
+            </div>
+
+            <div className="footer-content-center">
+                <h2>COMPANY</h2>
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/menu"><li>Menu</li></a>
+                    <a href="/about"><li>About Us</li></a>
+                    <a href="/Feedback"><li>Feedback</li></a>
+                </ul>
+            </div>
+
+            <div className="footer-content-right">
+                <h2>GET IN TOUCH</h2>
+                <ul>
+                    <li>+961 03-743-777</li>
+                    <li>5beanscoffeeshop@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p className="footer-copyright">copyright 2025 © Hadi Hachem - All Rights Reserved</p>
+    </div>
+  )
+}
+
+export default Footer

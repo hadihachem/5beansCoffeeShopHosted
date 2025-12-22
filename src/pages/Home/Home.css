@@ -1,0 +1,28 @@
+/* Home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.home-main-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-main-content {
+    width: 90%;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-main-content {
+    width: 95%;
+    padding: 10px 0;
+  }
+}

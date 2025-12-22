@@ -1,0 +1,149 @@
+/* Feedback Form CSS */
+.feedback-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f8f4ee; /* Cream background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(58, 45, 31, 0.1); /* Soft shadow */
+    font-family: 'Open Sans', sans-serif;
+    color: #3a2d1f; /* Dark coffee brown text */
+  }
+  
+  .feedback-form h2 {
+    text-align: center;
+    color: #5A382D; /* Darker coffee brown */
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  .feedback-form h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #d4a762; /* Coffee gold accent */
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #6b5a45; /* Medium coffee brown */
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="number"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #c4a484; /* Light coffee border */
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus,
+  .form-group input[type="tel"]:focus,
+  .form-group input[type="number"]:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #d4a762; /* Gold focus */
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(212, 167, 98, 0.2); /* Subtle glow */
+  }
+  
+  .form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #d4a762; /* Gold checkbox */
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color: #5A382D; /* Dark coffee brown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3a2d1f; /* Darker shade */
+  }
+  
+  /* Rating input styling */
+  .form-group input[type="number"] {
+    -moz-appearance: textfield;
+    width: 60px;
+    text-align: center;
+  }
+  
+  .form-group input[type="number"]::-webkit-outer-spin-button,
+  .form-group input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .feedback-form {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .checkbox-group {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feedback-form {
+      padding: 1rem;
+    }
+  
+    .feedback-form h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');

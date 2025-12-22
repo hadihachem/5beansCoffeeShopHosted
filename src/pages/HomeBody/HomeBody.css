@@ -1,0 +1,53 @@
+.album-container {
+    padding: 8px;
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  .custom-image{
+    border: 1px solid black;
+    height: 250px;
+  }
+
+  .album-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Masonry layout using CSS columns */
+  .masonry {
+    column-count: 3;
+    column-gap: 15px;
+  }
+  
+  .masonry-img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: block;
+    break-inside: avoid;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .masonry-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .masonry {
+      column-count: 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .masonry {
+      column-count: 1;
+    }
+  }
+  

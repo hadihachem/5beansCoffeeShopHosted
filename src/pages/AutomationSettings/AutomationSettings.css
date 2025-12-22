@@ -1,0 +1,136 @@
+/* General Styling */
+.automation-settings {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #925300e3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+
+  }
+  
+  h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Settings Section */
+  .automation-settings div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .right{
+    margin-right: 10px;
+  }
+
+
+.automation-settings select,
+.automation-settings input[type="time"] {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #f8d8b170;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.imageAutomation{
+  width: 50px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.automation-settings input[type="time"] {
+  background-color: #f8d8b170;
+  cursor: pointer;
+}
+  /* Frequency Select */
+  select {
+    width: 50%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #1d1c1c;
+    border-radius: 20px;
+    background-color: #f8d8b170;
+    color: white;
+  }
+  
+  /* Item Selection List */
+  .automation-settings ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+ .automation-settings li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+  
+ .automation-settings li label {
+    font-size: 16px;
+    color: #444;
+    color: white;
+    
+  }
+  
+.automation-settings  input[type="checkbox"] {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+ button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    
+  }
+  
+.automation-settings  button:hover {
+    background-color: #252525;
+  }
+  
+  /* Toggle Switch */
+ .automation-settings input[type="checkbox"]:checked {
+    background-color: #000000;
+    
+  }
+  
+  /* Error message or warning */
+ 
+ .automation-settings .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  
