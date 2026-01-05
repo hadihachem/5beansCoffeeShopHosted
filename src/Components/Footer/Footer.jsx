@@ -40,7 +40,6 @@ const Footer = () => {
             </div>
         </div>
         <hr />
-        <p className="footer-copyright">copyright 2025 © Hadi Hachem - All Rights Reserved</p>
     </div>
   )
 }
