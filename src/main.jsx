@@ -8,7 +8,7 @@ import StoreContextProvider from './context/StoreContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/5beansCoffeeShopHosted">
       <StoreContextProvider>
 
         <App />
