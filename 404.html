@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>5Beans Coffee Shop</title>
+    <script>
+      const path = window.location.pathname;
+      const repoName = "5beansCoffeeShopHosted";
+      
+      sessionStorage.setItem('redirectPath', path);
+      window.location.replace(`/${repoName}/`);
+    </script>
+  </head>
+  <body>
+    Redirecting to 5 Beans Coffee Shop...
+  </body>
+</html>
