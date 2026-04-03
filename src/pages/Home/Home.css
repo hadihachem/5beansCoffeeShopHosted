@@ -6,6 +6,66 @@
   width: 100%;
 }
 
+/* ========================= */
+/* HAPPY DIVIDER IMAGE */
+/* ========================= */
+
+.happy-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    padding: 20px 0;
+}
+
+.happy-divider img {
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Optional: add decorative lines on sides */
+.happy-divider.with-lines {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.happy-divider.with-lines::before,
+.happy-divider.with-lines::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #EABE91;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .happy-divider {
+        margin: 40px 0;
+        padding: 15px 0;
+    }
+    
+    .happy-divider img {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .happy-divider {
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+    
+    .happy-divider img {
+        width: 80px;
+    }
+}
+
 .home-main-content {
   width: 80%;
   margin: 0 auto;

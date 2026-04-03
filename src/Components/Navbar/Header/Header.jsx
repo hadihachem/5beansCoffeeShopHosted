@@ -3,12 +3,16 @@ import "./Header.css"
 const Header = () => {
   return (
     <header className='header'>
-        <div className="header-overlay"></div>
-        {/* <div className="header-contents">
-            <h1>Order your favorite food here</h1>
-            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
-            <a href="#explore-menu"><button className="btn-explore">View Menu</button></a>
-        </div> */}
+        <div className="header-overlay"><div className="header-logo">
+            <img 
+                src="https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/Group+129.png" 
+                alt="5 Beans Coffee Shop Logo"
+            />
+        </div></div>
+        
+        <div className="header-contents">
+            <h1>Taste of Home</h1>
+        </div> 
     </header>
   )
 }

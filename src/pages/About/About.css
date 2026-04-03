@@ -38,6 +38,7 @@
   width: 90%;
   max-width: 1200px;
   z-index: 2;
+  padding: 0 20px;
 }
 
 .hero-overlay h1 {
@@ -149,15 +150,56 @@
   font-weight: 300;
 }
 
-/* Modern Image Styling */
-.about-image {
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  aspect-ratio: 1/1;
-  max-height: 600px;
+/* Fix for styled-image-2 */
+.styled-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
 }
 
+/* Alternative: If you want the image to fill but not get cut off */
+.styled-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
+
+/* Also fix the .about-image container to better handle the image */
+.about-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    max-height: 700px;
+    background-color: #f5f5f5; /* Background color in case image doesn't fill */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Optional: Add some padding inside the image container if needed */
+.about-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    max-height: 700px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.styled-image-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
 .styled-image {
   width: 100%;
   height: 100%;
@@ -223,6 +265,7 @@
   color: #666;
   text-align: center;
   font-weight: 300;
+  padding: 0 20px;
 }
 
 /* Modern Cards Grid */
@@ -328,7 +371,7 @@
   }
 }
 
-/* Responsive Design */
+/* Responsive Design - IMPROVED FOR MOBILE */
 @media (max-width: 1100px) {
   .about-section {
     gap: 4rem;
@@ -342,8 +385,8 @@
 @media (max-width: 900px) {
   .about-section {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    margin: 6rem 0;
+    gap: 3rem;
+    margin: 4rem 0;
   }
   
   .reverse .about-text,
@@ -352,7 +395,10 @@
   }
   
   .about-image {
-    max-height: 500px;
+    max-height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
   }
   
   .hero-overlay h1 {
@@ -362,44 +408,16 @@
   .hero-overlay p {
     font-size: 1.2rem;
   }
+  
+  .about-content {
+    margin: 4rem auto;
+  }
 }
 
 @media (max-width: 768px) {
   .about-content {
-    margin: 5rem auto;
+    margin: 3rem auto;
     padding: 0 1.5rem;
-  }
-  
-  .about-text h2 {
-    font-size: 2.2rem;
-  }
-  
-  .lead-text {
-    font-size: 1.2rem;
-  }
-  
-  .signature-content h2 {
-    font-size: 2.5rem;
-  }
-  
-  .signature-items {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-hero {
-    height: 70vh;
-    min-height: 500px;
-  }
-  
-  .hero-overlay h1 {
-    font-size: 2.5rem;
-  }
-  
-  .hero-overlay p {
-    font-size: 1.1rem;
   }
   
   .about-text {
@@ -408,18 +426,194 @@
   
   .about-text h2 {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .lead-text {
+    font-size: 1.2rem;
     padding-left: 1.5rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
   
-  .signature-section {
-    padding: 5rem 0;
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+  
+  .signature-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .signature-content > p {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 15px;
+  }
+  
+  .signature-items {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 15px;
   }
   
   .signature-item {
     padding: 2rem 1.5rem;
+  }
+  
+  .signature-item h3 {
+    font-size: 1.4rem;
+  }
+  
+  .signature-item p {
+    font-size: 0.95rem;
+  }
+  
+  .signature-item::after {
+    font-size: 3rem;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .about-section::before {
+    top: -2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .hero-overlay {
+    padding: 0 15px;
+  }
+  
+  .about-content {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .about-section {
+    margin: 2.5rem 0;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    padding: 0.5rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead-text {
+    font-size: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead-text::before {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image {
+    max-height: 280px;
+    border-radius: 12px;
+  }
+  
+  .about-image::before {
+    top: 10px;
+    left: 10px;
+    right: -10px;
+    bottom: -10px;
+    border-width: 1px;
+  }
+  
+  .signature-section {
+    padding: 3rem 0;
+  }
+  
+  .signature-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signature-content > p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .signature-items {
+    gap: 1rem;
+  }
+  
+  .signature-item {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .signature-item h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.8rem;
+  }
+  
+  .signature-item h3::after {
+    width: 30px;
+    height: 2px;
+  }
+  
+  .signature-item p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .signature-item::after {
+    font-size: 2.5rem;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .signature-item:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 380px) {
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.4rem;
+  }
+  
+  .signature-content h2 {
+    font-size: 1.6rem;
+  }
+  
+  .about-image {
+    max-height: 240px;
   }
 }

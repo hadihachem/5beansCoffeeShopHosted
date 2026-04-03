@@ -40,9 +40,7 @@ const About = () => {
         <div className="about-section">
           <div className="about-text">
             <h2>About 5 Beans Coffee Shop</h2>
-            <p className="lead-text">
-              We are five passionate individuals, family and friends, united by our devotion to exceptional coffee.
-            </p>
+            
             <p>
               What began as a shared dream in Australia's vibrant café culture has blossomed into a beloved institution in Lebanon. At 5 Beans, we've mastered the alchemy of transforming premium beans into moments of connection and joy.
             </p>
@@ -64,7 +62,7 @@ const About = () => {
             <img 
               src={imageLinks.baristaAbout} 
               alt="Premium coffee beans selection" 
-              className="styled-image" 
+              className="styled-image-2" 
             />
           </div>
           <div className="about-text">
@@ -109,16 +107,11 @@ const About = () => {
         <div className="signature-content">
           <h2>Our Signature</h2>
           <p>
-            The 5 Beans Blend - A harmonious balance of chocolatey depth and bright citrus notes, roasted exclusively for our shops. Experience why this proprietary blend has become the hallmark of our identity.
-          </p>
+Arabica Beans from Ethiopia containing floral and chocolate notes which pleasantly linger on the palette. To complement the Ethiopian Bean, 5 Beans team added their special blend from diverse origins to seduce the tastebuds with a rich aromatic coffee experience.</p>
           <div className="signature-items">
             <div className="signature-item">
               <h3>Single Origin Selections</h3>
               <p>Seasonal offerings from world-renowned coffee regions</p>
-            </div>
-            <div className="signature-item">
-              <h3>Artisanal Brew Methods</h3>
-              <p>Chemex, V60, AeroPress, and Syphon preparations</p>
             </div>
             <div className="signature-item">
               <h3>House-made Pastries</h3>

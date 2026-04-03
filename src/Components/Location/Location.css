@@ -1,0 +1,165 @@
+.location-page-alt {
+  min-height: 100vh;
+  background: #faf9f7;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #2c1810 0%, #3e2723 100%);
+  padding: 120px 40px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" opacity="0.05"><path d="M20,20 L80,20 M20,40 L80,40 M20,60 L80,60 M20,80 L80,80 M40,20 L40,80 M60,20 L60,80" stroke="white" stroke-width="1"/></svg>');
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #c9a03d;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.locations-grid {
+  max-width: 1200px;
+  margin: -50px auto 0;
+  padding: 0 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+}
+
+.location-card-alt {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.location-card-alt:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  padding: 25px 30px;
+  background: white;
+  border-bottom: 1px solid #f0e4d0;
+  position: relative;
+}
+
+.branch-number {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(201,160,61,0.1);
+}
+
+.card-header h3 {
+  font-size: 1.8rem;
+  color: #2c1810;
+  margin: 0;
+}
+
+.address-section {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fef9f0;
+  border-bottom: 1px solid #f0e4d0;
+}
+
+.address-section p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.map-alt iframe {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 20px 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .locations-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px 60px;
+    gap: 30px;
+  }
+
+  .card-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .branch-number {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .card-header {
+    padding: 20px;
+  }
+
+  .card-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .address-section {
+    padding: 15px 20px;
+  }
+
+  .map-alt iframe {
+    height: 250px;
+  }
+}

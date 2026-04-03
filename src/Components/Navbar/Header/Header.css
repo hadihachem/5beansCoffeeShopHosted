@@ -1,10 +1,10 @@
 .header {
-    width: 100%;
+    width: 80%;
     height: 100vh;
-    min-height: 600px;
+    min-height: 500px;
     margin-bottom: 30px;
-    background-image: url('https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/background5b.jpg');
-    background-size: contain;
+    background-image: url('https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/71f9a45a2a1e7e7eb8cda601ab3a42b0afafc93b.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -22,7 +22,35 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
+    z-index: 1;
+}
+
+/* Ensure any content inside header appears above overlay */
+.header > *:not(.header-overlay) {
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo positioning - TOP LEFT CORNER */
+.header-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+.header-logo img {
+    height: auto;
+    width: auto;
+    max-width: 150px;
+    max-height: 150px;
+    /* If your logo is dark, uncomment the line below to make it white */
+    /* filter: brightness(0) invert(1); */
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
 }
 
 .header-contents {
@@ -32,11 +60,13 @@
     gap: 1.5rem;
     max-width: 50%;
     animation: fadeIn 3s;
+    color: #EABE91 !important;
+    z-index: 2;
+    text-align: center;
 }
 
 .header-contents h1 {
     font-weight: 600;
-    color: white;
     font-size: clamp(2rem, 4.5vw, 4rem);
     line-height: 1.2;
     margin-bottom: 0.5rem;
@@ -59,7 +89,7 @@
     font-size: clamp(0.9rem, 1.1vw, 1.1rem);
     border-radius: 50px;
     transition: all 0.3s ease;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .btn-explore:hover {
@@ -101,12 +131,18 @@
     .header {
         background-size: cover;
     }
+    
+    .header-logo img {
+        max-width: 120px;
+        max-height: 100px;
+    }
 }
 
 @media (max-width: 480px) {
     .header {
         height: 50vh;
         min-height: 300px;
+        width: 90%;
     }
     
     .header-contents {
@@ -119,5 +155,15 @@
     
     .header-contents p {
         font-size: 0.9rem;
+    }
+    
+    .header-logo {
+        top: 10px;
+        left: 10px;
+    }
+    
+    .header-logo img {
+        max-width: 90px;
+        max-height: 80px;
     }
 }

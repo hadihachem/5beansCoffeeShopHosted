@@ -14,8 +14,16 @@ export const imageLinks = {
     peanutButterBar:"https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/PeanutButterBar.png",
     footerFlatWhite: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/footerFlatWhite.png",
     logoHorizontal: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/logoHorizontal.jpg",
-    aboutHeaderImg: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/AboutHeaderImg.avif",
-    image2About: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/Image2About.avif",
-    baristaAbout: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/BaristaAbout.avif",
-    AboutIcedCoffee: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/AboutIcedCoffee.avif",
+    aboutHeaderImg: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/5beansBg.jpg",
+    image2About: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/image2About.jpg",
+    baristaAbout: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/-+Front+-.png",
+    AboutIcedCoffee: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img7.jpg",
+    img1: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img1.jpg",
+    img2: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img2.jpg",
+    img3: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img3.jpg",
+    img4: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img4.jpg",
+    img5: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img5.jpg",
+    img6: "https://s3.us-east-1.amazonaws.com/cdn.betdevelopers.com/images/jmjs/5BeansCoffeeShop/img6.jpg",
+
+
 };
